@@ -41,7 +41,7 @@ fetch(userURL).then(res => res.json())
                             let li = document.createElement('li');
                             let click = document.createElement('button')
                             click.addEventListener('click', ()=>{
-                                location.href='post-details.html'
+                                location.href=`post-details.html?id=${title.userId}&postId=${title.id}`
                             })
                             click.innerText ='Posts'
                             li.innerText = `${title.id}: ${title.title}`
